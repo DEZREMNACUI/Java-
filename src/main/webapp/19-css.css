@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-div {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reg-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 0;
+}
+
+.inputs {
+    padding: 10px 0;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.err_msg {
+    color: red;
+    display: none;
+    margin-top: 5px;
+}
