@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/19-css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式">
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/catalina.policy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/catalina.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/jaspic-providers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/jaspic-providers.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/tomcat-users.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +35,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2XRh7v2tGgWiwChiQpb2yFuhQPB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,24 +54,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/SmartTomCat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\src\main\webapp" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JAVA_FINAL_WORK" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat" />
+      <option name="contextPath" value="/JAVA_FINAL_WORK" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.14" />
+          <option name="path" value="$PROJECT_DIR$/../../../apache-tomcat-10.1.14" />
+          <option name="version" value="10.1.14.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="JAVA_FINAL_WORK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,11 +110,72 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698597636075</updated>
-      <workItem from="1698597637128" duration="2503000" />
+      <workItem from="1698597637128" duration="2746000" />
+      <workItem from="1698600405682" duration="50000" />
+      <workItem from="1698600458168" duration="24000" />
+      <workItem from="1698600512641" duration="66000" />
+      <workItem from="1698600580959" duration="57000" />
+      <workItem from="1698600650854" duration="2000" />
+      <workItem from="1698600660589" duration="34000" />
+      <workItem from="1698600701550" duration="66000" />
+      <workItem from="1698600776514" duration="18000" />
+      <workItem from="1698600845076" duration="440000" />
+      <workItem from="1698601488477" duration="29000" />
+      <workItem from="1698647955295" duration="37000" />
+      <workItem from="1698649111641" duration="48000" />
+      <workItem from="1698661516138" duration="73000" />
+      <workItem from="1698662499586" duration="62000" />
+      <workItem from="1698675956509" duration="18000" />
+      <workItem from="1698682083545" duration="804000" />
     </task>
+    <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
+      <option name="closed" value="true" />
+      <created>1698600200434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698600200434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式">
+      <option name="closed" value="true" />
+      <created>1698682788719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698682788719</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="登录网页与跳转后的网页的制作" />
+    <MESSAGE value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
   </component>
 </project>
