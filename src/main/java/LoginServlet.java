@@ -1,54 +1,60 @@
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
-
 @WebServlet("/req1")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("utf-8");
-        resp.setCharacterEncoding("utf-8");
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        Cookie[] cookies = req.getCookies();
+        boolean flag;
+        boolean flag1 = false, flag2 = false;
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                flag = cookie.getName().equals("username") && cookie.getValue().equals(username);
+                if (flag) {
+                    for (Cookie cookie1 : cookies) {
+                        flag = cookie1.getName().equals("password") && cookie1.getValue().equals(password);
+                        if (flag) {
+                            flag1 = true;
+                            break;
+                        }
+                    }
+                }
+                if (flag1) {
+                    break;
+                }
+            }
 
-        // 获取所有参数的Map集合
-        Enumeration<String> parameterNames = req.getParameterNames();
+            String userInput = req.getParameter("captchaInput");
+            String storedCaptcha = (String) req.getSession().getAttribute("captcha");
+            if (userInput != null && userInput.equalsIgnoreCase(storedCaptcha)) {
+                flag2 = true;
+            }
+            if(flag1&&flag2) {
+                HttpSession session = req.getSession();
+                session.setAttribute("loginStatus", "loginIn");
 
-        // 输出 HTML 页面
-        out.println("<!DOCTYPE html>");
-        out.println("<html lang=\"en\">");
-        out.println("<head>");
-        out.println("<meta charset=\"UTF-8\">");
-        out.println("<title>Login Success</title>");
-        out.println("</head>");
-        out.println("<body>");
+                resp.sendRedirect("LoginSuccess.html");
+            } else {
+                resp.setContentType("text/html");
+                PrintWriter out = resp.getWriter();
+                out.println("<html><body>");
+                out.println("<h2 style ='text-align: center;'>账户或密码或验证码不正确,5秒后返回登录界面</h2>");
+                out.println("</body><html>");
 
-        out.println("<h2>Parameters:</h2>");
-        out.println("<ul>");
-        while (parameterNames.hasMoreElements()) {
-            String paramName = parameterNames.nextElement();
-            String paramValue = req.getParameter(paramName);
-            out.println("<li>" + paramName + ": " + paramValue + "</li>");
+                resp.setHeader("Refresh","5; URL=index.html" );
+            }
         }
-        out.println("</ul>");
+    }
 
-        out.println("<h2>Headers:</h2>");
-        out.println("<ul>");
-        Enumeration<String> headerNames = req.getHeaderNames();
-        while (headerNames.hasMoreElements()) {
-            String headerName = headerNames.nextElement();
-            String headerValue = req.getHeader(headerName);
-            out.println("<li>" + headerName + ": " + headerValue + "</li>");
-        }
-        out.println("</ul>");
-
-        out.println("</body>");
-        out.println("</html>");
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
     }
 }

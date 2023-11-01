@@ -36,3 +36,624 @@
 31-Oct-2023 00:16:59.776 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
 31-Oct-2023 00:16:59.782 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 00:16:59.785 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 21:39:55.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 21:39:55.891 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 21:39:55.892 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 21:39:55.892 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 21:39:55.892 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 21:39:55.892 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 21:39:55.900 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 21:39:55.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 21:39:55.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 21:39:55.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51629:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 21:39:55.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 21:39:55.906 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 21:39:55.922 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 21:39:56.102 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 21:39:56.119 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[409]毫秒内初始化
+31-Oct-2023 21:39:56.160 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 21:39:56.162 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 21:39:56.171 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 21:39:56.446 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 21:39:56.516 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[344]ms内完成
+31-Oct-2023 21:39:56.520 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 21:39:56.554 信息 [main] org.apache.catalina.startup.Catalina.start [435]毫秒后服务器启动
+31-Oct-2023 21:41:04.780 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 21:41:04.792 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 21:41:04.801 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 21:41:04.804 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 21:41:36.775 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 21:41:36.779 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 21:41:36.780 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 21:41:36.787 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51675:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 21:41:36.788 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 21:41:36.790 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 21:41:36.795 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 21:41:36.984 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 21:41:36.998 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[374]毫秒内初始化
+31-Oct-2023 21:41:37.044 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 21:41:37.044 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 21:41:37.054 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 21:41:37.334 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 21:41:37.405 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[349]ms内完成
+31-Oct-2023 21:41:37.407 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 21:41:37.445 信息 [main] org.apache.catalina.startup.Catalina.start [445]毫秒后服务器启动
+31-Oct-2023 22:06:08.303 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:06:08.315 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:06:08.327 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:06:08.342 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:17:51.064 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:17:51.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:17:51.080 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:17:51.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:17:51.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:17:51.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:17:51.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=50155:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:17:51.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:17:51.085 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:17:51.089 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:17:51.256 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:17:51.272 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[359]毫秒内初始化
+31-Oct-2023 22:17:51.313 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:17:51.313 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:17:51.322 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:17:51.586 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:17:51.665 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[341]ms内完成
+31-Oct-2023 22:17:51.667 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:17:51.707 信息 [main] org.apache.catalina.startup.Catalina.start [435]毫秒后服务器启动
+31-Oct-2023 22:18:30.173 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:18:30.184 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:18:30.191 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:18:30.193 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:18:31.907 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:18:31.910 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:18:31.910 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:18:31.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=50224:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:18:31.918 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:18:31.920 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:18:31.925 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:18:32.111 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:18:32.129 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[361]毫秒内初始化
+31-Oct-2023 22:18:32.170 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:18:32.170 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:18:32.180 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:18:32.449 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:18:32.523 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[341]ms内完成
+31-Oct-2023 22:18:32.526 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:18:32.564 信息 [main] org.apache.catalina.startup.Catalina.start [433]毫秒后服务器启动
+31-Oct-2023 22:19:49.843 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:19:49.854 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:19:49.860 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:19:49.863 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:19:51.674 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:19:51.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:19:51.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:19:51.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:19:51.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:19:51.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:19:51.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:19:51.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:19:51.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:19:51.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:19:51.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:19:51.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:19:51.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:19:51.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:19:51.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=50347:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:19:51.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:19:51.688 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:19:51.694 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:19:51.869 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:19:51.886 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[351]毫秒内初始化
+31-Oct-2023 22:19:51.927 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:19:51.927 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:19:51.937 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:19:52.211 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:19:52.281 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[342]ms内完成
+31-Oct-2023 22:19:52.284 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:19:52.326 信息 [main] org.apache.catalina.startup.Catalina.start [440]毫秒后服务器启动
+31-Oct-2023 22:24:54.946 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:24:54.958 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:24:54.963 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:24:54.965 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:25:04.706 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:25:04.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:25:04.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:25:04.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=50877:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:25:04.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:25:04.720 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:25:04.726 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:25:04.887 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:25:04.902 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[334]毫秒内初始化
+31-Oct-2023 22:25:04.946 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:25:04.946 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:25:04.956 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:25:05.171 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:641)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1930)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:534)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:424)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1659)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: 无法启动组件[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JAVA_FINAL_WORK]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 37 more
+	Caused by: java.lang.VerifyError: Illegal type at constant pool entry 7 in class filter.Filter1
+Exception Details:
+  Location:
+    filter/Filter1.init(Ljakarta/servlet/FilterConfig;)V @2: invokespecial
+  Reason:
+    Constant pool index 7 is invalid
+  Bytecode:
+    0000000: 2a2b b700 07b1                         
+
+		at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+		at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+		at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+		at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:104)
+		at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:270)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationFilterAnnotations(WebAnnotationSet.java:109)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:68)
+		at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:333)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:994)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 38 more
+31-Oct-2023 22:25:05.179 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[221]ms内完成
+31-Oct-2023 22:25:05.181 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:25:05.261 信息 [main] org.apache.catalina.startup.Catalina.start [359]毫秒后服务器启动
+31-Oct-2023 22:26:58.985 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:26:58.998 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:26:58.999 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:26:59.001 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:44:13.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:44:13.086 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:44:13.092 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:44:13.092 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51372:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:44:13.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:44:13.113 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:44:13.128 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:44:13.281 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:44:13.293 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[363]毫秒内初始化
+31-Oct-2023 22:44:13.333 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:44:13.334 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:44:13.343 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:44:13.548 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:641)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1930)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:534)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:424)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1659)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: 无法启动组件[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JAVA_FINAL_WORK]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 37 more
+	Caused by: java.lang.VerifyError: Illegal type at constant pool entry 7 in class filter.Filter1
+Exception Details:
+  Location:
+    filter/Filter1.init(Ljakarta/servlet/FilterConfig;)V @2: invokespecial
+  Reason:
+    Constant pool index 7 is invalid
+  Bytecode:
+    0000000: 2a2b b700 07b1                         
+
+		at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+		at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+		at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+		at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:104)
+		at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:270)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationFilterAnnotations(WebAnnotationSet.java:109)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:68)
+		at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:333)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:994)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 38 more
+31-Oct-2023 22:44:13.556 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[211]ms内完成
+31-Oct-2023 22:44:13.558 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:44:13.626 信息 [main] org.apache.catalina.startup.Catalina.start [333]毫秒后服务器启动
+31-Oct-2023 22:44:37.381 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:44:37.391 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:44:37.392 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:44:37.394 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:44:39.015 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:44:39.018 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:44:39.019 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:44:39.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:44:39.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:44:39.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:44:39.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:44:39.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51403:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:44:39.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:44:39.029 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:44:39.033 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:44:39.192 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:44:39.208 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[334]毫秒内初始化
+31-Oct-2023 22:44:39.252 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:44:39.252 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:44:39.261 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:44:39.471 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:641)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1930)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:534)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:424)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1659)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: 无法启动组件[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JAVA_FINAL_WORK]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 37 more
+	Caused by: java.lang.VerifyError: Illegal type at constant pool entry 7 in class filter.Filter1
+Exception Details:
+  Location:
+    filter/Filter1.init(Ljakarta/servlet/FilterConfig;)V @2: invokespecial
+  Reason:
+    Constant pool index 7 is invalid
+  Bytecode:
+    0000000: 2a2b b700 07b1                         
+
+		at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+		at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+		at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+		at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:104)
+		at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:270)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationFilterAnnotations(WebAnnotationSet.java:109)
+		at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:68)
+		at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:333)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:994)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 38 more
+31-Oct-2023 22:44:39.481 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[217]ms内完成
+31-Oct-2023 22:44:39.483 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:44:39.556 信息 [main] org.apache.catalina.startup.Catalina.start [348]毫秒后服务器启动
+31-Oct-2023 22:45:13.600 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:45:13.610 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:45:13.611 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:45:13.615 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:45:17.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:45:17.197 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:45:17.197 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:45:17.197 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:45:17.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:45:17.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:45:17.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:45:17.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:45:17.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:45:17.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51470:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:45:17.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:45:17.208 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:45:17.213 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:45:17.387 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:45:17.406 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[381]毫秒内初始化
+31-Oct-2023 22:45:17.452 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:45:17.452 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:45:17.463 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:45:17.873 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:45:17.954 严重 [main] org.apache.catalina.core.StandardContext.startInternal 一个或多个筛选器启动失败。完整的详细信息将在相应的容器日志文件中找到
+31-Oct-2023 22:45:17.954 严重 [main] org.apache.catalina.core.StandardContext.startInternal 由于之前的错误，Context[/JAVA_FINAL_WORK]启动失败
+31-Oct-2023 22:45:17.965 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[500]ms内完成
+31-Oct-2023 22:45:17.967 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:45:18.011 信息 [main] org.apache.catalina.startup.Catalina.start [605]毫秒后服务器启动
+31-Oct-2023 22:46:19.392 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:46:19.401 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:46:19.402 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:46:19.405 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:46:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:46:23.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:46:23.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51522:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:46:23.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:46:23.703 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:46:23.708 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:46:23.879 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:46:23.895 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[350]毫秒内初始化
+31-Oct-2023 22:46:23.932 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:46:23.932 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:46:23.941 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:46:24.190 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:46:24.292 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[350]ms内完成
+31-Oct-2023 22:46:24.295 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:46:24.328 信息 [main] org.apache.catalina.startup.Catalina.start [432]毫秒后服务器启动
+31-Oct-2023 22:47:19.898 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:47:19.908 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:47:19.915 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:47:19.917 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:48:03.097 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.14
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Oct 9 2023 21:01:11 UTC
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.14.0
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+31-Oct-2023 22:48:03.100 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     E:\Develop_tools\jdk17
+31-Oct-2023 22:48:03.102 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    17.0.8+9-LTS-211
+31-Oct-2023 22:48:03.102 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+31-Oct-2023 22:48:03.102 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:48:03.102 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\apache-tomcat-10.1.14
+31-Oct-2023 22:48:03.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\apache-tomcat-10.1.14
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\temp
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\logging.properties
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:E:\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=51668:E:\IntelliJ IDEA 2023.2.2\bin
+31-Oct-2023 22:48:03.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+31-Oct-2023 22:48:03.110 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[2.0.6]。
+31-Oct-2023 22:48:03.114 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.11 19 Sep 2023]
+31-Oct-2023 22:48:03.271 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+31-Oct-2023 22:48:03.284 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[315]毫秒内初始化
+31-Oct-2023 22:48:03.318 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+31-Oct-2023 22:48:03.318 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.14]
+31-Oct-2023 22:48:03.326 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]。
+31-Oct-2023 22:48:03.597 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+31-Oct-2023 22:48:03.670 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\SmartTomCat\conf\Catalina\localhost\JAVA_FINAL_WORK.xml]的部署已在[342]ms内完成
+31-Oct-2023 22:48:03.672 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+31-Oct-2023 22:48:03.712 信息 [main] org.apache.catalina.startup.Catalina.start [428]毫秒后服务器启动
+31-Oct-2023 22:48:23.274 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+31-Oct-2023 22:48:23.284 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+31-Oct-2023 22:48:23.290 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+31-Oct-2023 22:48:23.292 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]

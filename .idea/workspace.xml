@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式">
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/catalina.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/catalina.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/jaspic-providers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/jaspic-providers.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/server.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/tomcat-users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/tomcat-users.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/conf/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/YanZhenMa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZhucheServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/LoginFileter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/登录.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +57,21 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/SmartTomCat&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/src/main/webapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
@@ -127,6 +133,15 @@
       <workItem from="1698662499586" duration="62000" />
       <workItem from="1698675956509" duration="18000" />
       <workItem from="1698682083545" duration="804000" />
+      <workItem from="1698682900620" duration="68000" />
+      <workItem from="1698684020700" duration="5000" />
+      <workItem from="1698759035829" duration="1265000" />
+      <workItem from="1698761180842" duration="1250000" />
+      <workItem from="1698762719678" duration="984000" />
+      <workItem from="1698770562441" duration="106000" />
+      <workItem from="1698797124951" duration="12991000" />
+      <workItem from="1698814078875" duration="156000" />
+      <workItem from="1698820965815" duration="4349000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -144,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698682788719</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式">
+      <option name="closed" value="true" />
+      <created>1698682919291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698682919291</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,5 +200,16 @@
     <MESSAGE value="登录网页与跳转后的网页的制作" />
     <MESSAGE value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
     <option name="LAST_COMMIT_MESSAGE" value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LoginServlet.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
