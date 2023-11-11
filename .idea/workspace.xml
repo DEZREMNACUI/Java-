@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/YanZhenMa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZhucheServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/LoginFileter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/登录.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="增加了注册，验证码，登录功能">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fastjson2-2.0.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dataitem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-10-31.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-10-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-11-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-11-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-11-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-11-01.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,33 +57,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\lib" />
       <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\src\main\webapp" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="com.poratu.idea.plugins.tomcat" />
+      </set>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="JAVA_FINAL_WORK" type="com.poratu.idea.plugins.tomcat">
@@ -141,7 +159,25 @@
       <workItem from="1698770562441" duration="106000" />
       <workItem from="1698797124951" duration="12991000" />
       <workItem from="1698814078875" duration="156000" />
-      <workItem from="1698820965815" duration="4349000" />
+      <workItem from="1698820965815" duration="4501000" />
+      <workItem from="1698825508470" duration="25000" />
+      <workItem from="1698825580774" duration="62000" />
+      <workItem from="1698825922752" duration="1574000" />
+      <workItem from="1698934908294" duration="281000" />
+      <workItem from="1698979206418" duration="1142000" />
+      <workItem from="1699155425482" duration="127000" />
+      <workItem from="1699155571543" duration="104000" />
+      <workItem from="1699155830052" duration="251000" />
+      <workItem from="1699363072919" duration="2139000" />
+      <workItem from="1699366841054" duration="2235000" />
+      <workItem from="1699369319151" duration="3803000" />
+      <workItem from="1699402881688" duration="530000" />
+      <workItem from="1699679749421" duration="24000" />
+      <workItem from="1699680058981" duration="6000" />
+      <workItem from="1699685977523" duration="585000" />
+      <workItem from="1699699958193" duration="7916000" />
+      <workItem from="1699709481403" duration="415000" />
+      <workItem from="1699709908691" duration="4078000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -167,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698682919291</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加了注册，验证码，登录功能">
+      <option name="closed" value="true" />
+      <created>1698825447944</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698825447944</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,15 +243,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="登录网页与跳转后的网页的制作" />
     <MESSAGE value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
+    <MESSAGE value="增加了注册，验证码，登录功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了注册，验证码，登录功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LoginServlet.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="6" />
+          <line>38</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

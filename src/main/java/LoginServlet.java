@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
             }
             if(flag1&&flag2) {
                 HttpSession session = req.getSession();
+                session.setMaxInactiveInterval(30 * 60);
                 session.setAttribute("loginStatus", "loginIn");
 
                 resp.sendRedirect("LoginSuccess.html");

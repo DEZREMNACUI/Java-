@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="LoginSuccess.css">
 </head>
 <body>
-<h1 style="text-align: center">登录成功,非常棒,爱来自桃六</h1>
+<h2>书籍信息表格</h2>
+
+<table border="1" id="bookTable">
+    <tr>
+        <th>书名</th>
+        <th>作者</th>
+        <th>国籍</th>
+    </tr>
+</table>
+
+<button onclick="window.location.href='/JAVA_FINAL_WORK/exit'">退出系统</button>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    // 发送 GET 请求获取数据
+    axios.get("http://localhost:8080/JAVA_FINAL_WORK/DatabaseReader")
+        .then(function (response) {
+            // 处理成功响应
+            var booksData = response.data;
+
+            // 填充表格数据
+            for (var i = 0; i < booksData.length; i++) {
+                var table = document.getElementById('bookTable');
+                var row = table.insertRow(-1);
+
+                var bookCell = row.insertCell(0);
+                bookCell.innerHTML = booksData[i].book;
+
+                var authorCell = row.insertCell(1);
+                authorCell.innerHTML = booksData[i].author;
+
+                var nationCell = row.insertCell(2);
+                nationCell.innerHTML = booksData[i].nation;
+            }
+        })
+        .catch(function (error) {
+            // 处理错误响应
+            console.error('Error fetching data:', error);
+        });
+</script>
+
 </body>
 </html>
