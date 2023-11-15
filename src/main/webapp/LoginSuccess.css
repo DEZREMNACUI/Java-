@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* 重置一些默认样式 */
 body, h2, table {
     margin: 0;
     padding: 0;
@@ -42,4 +42,21 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* 新增按钮的样式 */
+#bookTable button {
+    margin-right: 5px;
+}
+
+#bookTable button:nth-child(odd) {
+    background-color: #3498db;
+}
+
+#bookTable button:nth-child(even) {
+    background-color: #e74c3c;
+}
+
+#bookTable button:hover {
+    background-color: #2c3e50;
 }

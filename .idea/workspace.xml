@@ -4,21 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="增加了注册，验证码，登录功能">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fastjson2-2.0.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dataitem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Addservlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xiugaiservlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/AddForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ModifyForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/xiugai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-11-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/catalina.2023-11-01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-11-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost_access_log.2023-11-01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dataitem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,37 +56,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\lib" />
@@ -177,7 +176,29 @@
       <workItem from="1699685977523" duration="585000" />
       <workItem from="1699699958193" duration="7916000" />
       <workItem from="1699709481403" duration="415000" />
-      <workItem from="1699709908691" duration="4078000" />
+      <workItem from="1699709908691" duration="8936000" />
+      <workItem from="1699719179591" duration="5744000" />
+      <workItem from="1699724973286" duration="787000" />
+      <workItem from="1699725774269" duration="298000" />
+      <workItem from="1699761002717" duration="351000" />
+      <workItem from="1699766736704" duration="3349000" />
+      <workItem from="1699770582474" duration="57000" />
+      <workItem from="1699770647795" duration="2660000" />
+      <workItem from="1699773635491" duration="76000" />
+      <workItem from="1699773868476" duration="2366000" />
+      <workItem from="1699777686935" duration="4132000" />
+      <workItem from="1699788858195" duration="21000" />
+      <workItem from="1699789098345" duration="41000" />
+      <workItem from="1699836187693" duration="20000" />
+      <workItem from="1699836395511" duration="328000" />
+      <workItem from="1699837677600" duration="2456000" />
+      <workItem from="1699846719119" duration="1097000" />
+      <workItem from="1699850135051" duration="58000" />
+      <workItem from="1699861961696" duration="89000" />
+      <workItem from="1699962240148" duration="61000" />
+      <workItem from="1699967796105" duration="1553000" />
+      <workItem from="1699973110409" duration="2634000" />
+      <workItem from="1700007051092" duration="12791000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -211,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698825447944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上">
+      <option name="closed" value="true" />
+      <created>1699714091450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699714091450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,17 +273,7 @@
     <MESSAGE value="登录网页与跳转后的网页的制作" />
     <MESSAGE value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
     <MESSAGE value="增加了注册，验证码，登录功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了注册，验证码，登录功能" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LoginServlet.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
+    <option name="LAST_COMMIT_MESSAGE" value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
   </component>
 </project>

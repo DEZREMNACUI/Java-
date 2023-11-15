@@ -65,4 +65,100 @@ public class Dataitem {
         }
         return dataList;
     }
+
+    public static void updateDataInDatabase(String jdbcUrl, String username, String password,
+                                            String originalBook, String originalAuthor, String originalNation,
+                                            String newBook, String newAuthor, String newNation) {
+        try {
+            // 加载数据库驱动程序
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // 建立数据库连接
+            try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
+                // 执行更新
+                String sql = "UPDATE bookstore SET 书名=?, 作者=?, 国籍=? WHERE 书名=? AND 作者=? AND 国籍=?";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                    // 设置参数
+                    preparedStatement.setString(1, newBook);
+                    preparedStatement.setString(2, newAuthor);
+                    preparedStatement.setString(3, newNation);
+                    preparedStatement.setString(4, originalBook);
+                    preparedStatement.setString(5, originalAuthor);
+                    preparedStatement.setString(6, originalNation);
+
+                    // 执行更新操作
+                    int rowsAffected = preparedStatement.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        System.out.println("数据更新成功！");
+                    } else {
+                        System.out.println("未找到匹配的数据，更新失败。");
+                    }
+                }
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void deleteDataFromDatabase(String jdbcUrl, String username, String password,
+                                              String book, String author, String nation) {
+        try {
+            // 加载数据库驱动程序
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // 建立数据库连接
+            try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
+                // 执行删除
+                String sql = "DELETE FROM bookstore WHERE 书名=? AND 作者=? AND 国籍=?";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                    // 设置参数
+                    preparedStatement.setString(1, book);
+                    preparedStatement.setString(2, author);
+                    preparedStatement.setString(3, nation);
+
+                    // 执行删除操作
+                    int rowsAffected = preparedStatement.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        System.out.println("数据删除成功！");
+                    } else {
+                        System.out.println("未找到匹配的数据，删除失败。");
+                    }
+                }
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void addDataToDatabase(String jdbcUrl, String username, String password,
+                                         String book, String author, String nation) {
+        try {
+            // 加载数据库驱动程序
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // 建立数据库连接
+            try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
+                // 执行插入
+                String sql = "INSERT INTO bookstore (书名, 作者, 国籍) VALUES (?, ?, ?)";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                    // 设置参数
+                    preparedStatement.setString(1, book);
+                    preparedStatement.setString(2, author);
+                    preparedStatement.setString(3, nation);
+
+                    // 执行插入操作
+                    int rowsAffected = preparedStatement.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        System.out.println("数据插入成功！");
+                    } else {
+                        System.out.println("插入数据失败。");
+                    }
+                }
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

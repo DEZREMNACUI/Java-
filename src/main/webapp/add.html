@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加书籍信息</title>
+    <link rel="stylesheet" type="text/css" href="AddForm.css">
+</head>
+<body>
+<h2>添加书籍信息</h2>
+
+<form id="addForm" onsubmit="submitForm(); return false;">
+    <label for="book">书名:</label>
+    <input type="text" id="book" name="book" required><br>
+
+    <label for="author">作者:</label>
+    <input type="text" id="author" name="author" required><br>
+
+    <label for="nation">国籍:</label>
+    <input type="text" id="nation" name="nation" required><br>
+
+    <button type="submit">添加</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    function submitForm() {
+        var book = document.getElementById("book").value;
+        var author = document.getElementById("author").value;
+        var nation = document.getElementById("nation").value;
+        console.log("提交添加请求: ", book, author, nation);
+
+        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/Add', {
+            data: {
+                book: book,
+                author: author,
+                nation: nation
+            }
+        }).then(function (response) {
+            console.log('添加请求成功:', response);
+            // 在请求成功后进行页面跳转
+            window.location.href = 'LoginSuccess.html';
+        }).catch(function (error) {
+            console.error('添加请求失败:', error);
+            // 处理请求失败的情况
+        });
+    }
+</script>
+</body>
+</html>

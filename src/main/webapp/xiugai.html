@@ -1,0 +1,78 @@
+<!-- xiugai.html 页面 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改书籍信息</title>
+    <link rel="stylesheet" type="text/css" href="ModifyForm.css">
+</head>
+<body>
+<h2>修改书籍信息</h2>
+
+<form id="modifyForm" onsubmit="submitForm(); return false;">
+    <label for="newBook">新书名:</label>
+    <input type="text" id="newBook" name="newBook" required><br>
+
+    <label for="newAuthor">新作者:</label>
+    <input type="text" id="newAuthor" name="newAuthor" required><br>
+
+    <label for="newNation">新国籍:</label>
+    <input type="text" id="newNation" name="newNation" required><br>
+
+    <button type="submit">提交修改</button>
+    <input type="hidden" id="originalBook" name="originalBook" value="">
+    <input type="hidden" id="originalAuthor" name="originalAuthor" value="">
+    <input type="hidden" id="originalNation" name="originalNation" value="">
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    var originalBook = '';
+    var originalAuthor = '';
+    var originalNation = '';
+
+    window.onload = function () {
+        // 解析 URL 参数
+        var urlParams = new URLSearchParams(window.location.search);
+        originalBook = urlParams.get('book') || '';
+        originalAuthor = urlParams.get('author') || '';
+        originalNation = urlParams.get('nation') || '';
+
+        // 填充搜索框中的默认值
+        document.getElementById("newBook").value = originalBook;
+        document.getElementById("newAuthor").value = originalAuthor;
+        document.getElementById("newNation").value = originalNation;
+    };
+
+    function submitForm() {
+        // 在这里添加发送修改请求的逻辑
+        var newBook = document.getElementById("newBook").value;
+        var newAuthor = document.getElementById("newAuthor").value;
+        var newNation = document.getElementById("newNation").value;
+        console.log("提交修改请求: ", newBook, newAuthor, newNation);
+        // 设置原始书籍信息到隐藏字段
+        document.getElementById("originalBook").value = originalBook;
+        document.getElementById("originalAuthor").value = originalAuthor;
+        document.getElementById("originalNation").value = originalNation;
+        // 使用 axios 发送 POST 请求
+        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/xiugai', {
+            originalBook: originalBook,
+            originalAuthor: originalAuthor,
+            originalNation: originalNation,
+            newBook: newBook,
+            newAuthor: newAuthor,
+            newNation: newNation
+        }).then(function (response) {
+            console.log('修改请求成功:', response);
+            // 在请求成功后进行页面跳转或其他操作
+            window.location.href = 'LoginSuccess.html';
+        })
+            .catch(function (error) {
+                console.error('修改请求失败:', error);
+                // 处理请求失败的情况
+            });
+    }
+
+</script>
+</body>
+</html>
