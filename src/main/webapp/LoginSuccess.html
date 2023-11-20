@@ -7,88 +7,123 @@
 </head>
 <body>
 <h2>书籍信息表格</h2>
+<label for="search">搜索：</label>
+<select id="searchType">
+    <option value="book">书名</option>
+    <option value="author">作者</option>
+</select>
+<input type="text" id="search" oninput="searchTable()">
 
 <table border="1" id="bookTable">
     <tr>
         <th>书名</th>
         <th>作者</th>
         <th>国籍</th>
-        <th>操作</th> <!-- 新增按钮列 -->
+        <th>操作</th>
     </tr>
 </table>
+
+<!-- 添加分页控件 -->
+<div id="pagination">
+
+    <label for="currentPage">当前页：</label>
+    <input type="number" id="currentPage" value="1" min="1" oninput="searchTable()">
+    <button onclick="changePage(-1)">上一页</button>
+    <button onclick="changePage(1)">下一页</button>
+</div>
+
 <button onclick=window.location.href='add.html'>添加</button>
 <button onclick="window.location.href='/JAVA_FINAL_WORK/exit'">退出系统</button>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
-    // 发送 GET 请求获取数据
-    axios.get("http://10.69.219.123:8080/JAVA_FINAL_WORK/DatabaseReader")
-        .then(function (response) {
-            // 处理成功响应
-            var booksData = response.data;
+    var currentPage = 1; // 当前页码
 
-            // 填充表格数据
-            for (var i = 0; i < booksData.length; i++) {
-                var table = document.getElementById('bookTable');
-                var row = table.insertRow(-1);
-
-                var bookCell = row.insertCell(0);
-                bookCell.innerHTML = booksData[i].book;
-
-                var authorCell = row.insertCell(1);
-                authorCell.innerHTML = booksData[i].author;
-
-                var nationCell = row.insertCell(2);
-                nationCell.innerHTML = booksData[i].nation;
-
-                // 创建按钮
-                var operationCell = row.insertCell(3);
-                var modifyButton = document.createElement("button");
-                modifyButton.innerHTML = "修改";
-                // 添加事件监听器或将其链接到执行修改的函数
-                modifyButton.onclick = function (book, author, nation) {
-                    return function () {
-                        // 在这里添加修改的逻辑
-                        console.log("点击了修改按钮，书名：" + book + "，作者：" + author + "，国籍：" + nation);
-                        // 将书籍信息作为参数传递给 xiugai.html
-                        window.location.href = 'xiugai.html?book=' + encodeURIComponent(book) +
-                            '&author=' + encodeURIComponent(author) +
-                            '&nation=' + encodeURIComponent(nation);
-                    };
-                }(booksData[i].book, booksData[i].author, booksData[i].nation);
-                operationCell.appendChild(modifyButton);
-
-                var deleteButton = document.createElement("button");
-                deleteButton.innerHTML = "删除";
-                // 添加事件监听器或将其链接到执行删除的函数
-                deleteButton.onclick = function (book, author, nation) {
-                    return function () {
-                        // 发送 DELETE 请求
-                        axios.post("http://10.69.219.123:8080/JAVA_FINAL_WORK/Delete", {
-                            data: {
-                                book: book,
-                                author: author,
-                                nation: nation
-                            }
-                        })
-                            .then(function (response) {
-                                // 处理删除成功的逻辑，刷新页面
-                                console.log("删除成功", response);
-                                window.location.reload();
-                            })
-                            .catch(function (error) {
-                                // 处理删除失败的逻辑
-                                console.error("删除失败", error);
-                            });
-                    };
-                }(booksData[i].book, booksData[i].author, booksData[i].nation);
-                operationCell.appendChild(deleteButton);
+    // 修改 searchTable 函数，添加页码参数
+    function searchTable() {
+        axios.get("http://10.69.219.123:8080/JAVA_FINAL_WORK/DatabaseReader", {
+            params: {
+                searchType: document.getElementById('searchType').value,
+                filter: document.getElementById('search').value,
+                page: document.getElementById('currentPage').value // 使用当前输入的页码
             }
         })
-        .catch(function (error) {
-            // 处理错误响应
-            console.error('获取数据时出错：', error);
-        });
+            .then(function (response) {
+                // 处理成功响应
+                var booksData = response.data;
+
+                var table = document.getElementById('bookTable');
+                table.innerHTML = "<tr><th>书名</th><th>作者</th><th>国籍</th><th>操作</th></tr>";
+
+                for (var i = 0; i < booksData.length; i++) {
+                    var row = table.insertRow(-1);
+
+                    var bookCell = row.insertCell(0);
+                    bookCell.innerHTML = booksData[i].book;
+
+                    var authorCell = row.insertCell(1);
+                    authorCell.innerHTML = booksData[i].author;
+
+                    var nationCell = row.insertCell(2);
+                    nationCell.innerHTML = booksData[i].nation;
+
+                    var operationCell = row.insertCell(3);
+                    var modifyButton = document.createElement("button");
+                    modifyButton.innerHTML = "修改";
+                    modifyButton.onclick = function (book, author, nation) {
+                        return function () {
+                            console.log("点击了修改按钮，书名：" + book + "，作者：" + author + "，国籍：" + nation);
+                            window.location.href = 'xiugai.html?book=' + encodeURIComponent(book) +
+                                '&author=' + encodeURIComponent(author) +
+                                '&nation=' + encodeURIComponent(nation);
+                        };
+                    }(booksData[i].book, booksData[i].author, booksData[i].nation);
+                    operationCell.appendChild(modifyButton);
+
+                    var deleteButton = document.createElement("button");
+                    deleteButton.innerHTML = "删除";
+                    deleteButton.onclick = function (book, author, nation) {
+                        return function () {
+                            axios.post("http://10.69.219.123:8080/JAVA_FINAL_WORK/Delete", {
+                                data: {
+                                    book: book,
+                                    author: author,
+                                    nation: nation
+                                }
+                            })
+                                .then(function (response) {
+                                    console.log("删除成功", response);
+                                    window.location.reload();
+                                })
+                                .catch(function (error) {
+                                    console.error("删除失败", error);
+                                });
+                        };
+                    }(booksData[i].book, booksData[i].author, booksData[i].nation);
+                    operationCell.appendChild(deleteButton);
+                }
+            })
+            .catch(function (error) {
+                // 处理错误响应
+                console.error('获取数据时出错：', error);
+            });
+    }
+
+    // 修改 changePage 函数，直接调用 searchTable 函数
+    function changePage(offset) {
+        currentPage += offset;
+        if (currentPage < 1) {
+            currentPage = 1;
+        }
+        document.getElementById('currentPage').value = currentPage;
+        searchTable();
+    }
+
+    // 页面加载时执行一次搜索
+    window.onload = function () {
+        searchTable();
+    };
+
 </script>
 
 </body>

@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Addservlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DeleteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xiugaiservlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/AddForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ModifyForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/xiugai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了添加，删除，修改功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dataitem.java" afterDir="false" />
@@ -198,7 +189,12 @@
       <workItem from="1699962240148" duration="61000" />
       <workItem from="1699967796105" duration="1553000" />
       <workItem from="1699973110409" duration="2634000" />
-      <workItem from="1700007051092" duration="12791000" />
+      <workItem from="1700007051092" duration="12974000" />
+      <workItem from="1700026636820" duration="247000" />
+      <workItem from="1700056006625" duration="221000" />
+      <workItem from="1700439454841" duration="4771000" />
+      <workItem from="1700445758503" duration="2920000" />
+      <workItem from="1700451823691" duration="6069000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -240,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699714091450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新了添加，删除，修改功能">
+      <option name="closed" value="true" />
+      <created>1700020504884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700020504884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +278,7 @@
     <MESSAGE value="更新了tomcat-servlet的版本为10以上并取消了maven插件启动的方式" />
     <MESSAGE value="增加了注册，验证码，登录功能" />
     <MESSAGE value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
-    <option name="LAST_COMMIT_MESSAGE" value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
+    <MESSAGE value="更新了添加，删除，修改功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了添加，删除，修改功能" />
   </component>
 </project>

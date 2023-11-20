@@ -32,7 +32,7 @@ th {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -59,4 +59,21 @@ button:hover {
 
 #bookTable button:hover {
     background-color: #2c3e50;
+}
+
+#search {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* 修改当前页输入框的样式 */
+#currentPage {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* 修改分页控件的样式 */
+#pagination {
+    margin-top: 10px;
 }
