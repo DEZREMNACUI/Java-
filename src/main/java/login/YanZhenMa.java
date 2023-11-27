@@ -1,3 +1,5 @@
+package login;
+
 import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.CircleCaptcha;
 import jakarta.servlet.ServletException;

@@ -13,6 +13,10 @@ body {
 h2 {
     color: #333;
 }
+#bookTable img {
+    max-width: 100px; /* 设置最大宽度 */
+    max-height: 100px; /* 设置最大高度 */
+}
 
 table {
     width: 100%;
@@ -77,3 +81,5 @@ button:hover {
 #pagination {
     margin-top: 10px;
 }
+
+

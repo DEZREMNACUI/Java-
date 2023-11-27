@@ -1,6 +1,6 @@
-01-Nov-2023 15:43:20.763 严重 [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为[/JAVA_FINAL_WORK]的上下文中，servlet[LoginServlet]的Servlet.service()引发异常
+01-Nov-2023 15:43:20.763 严重 [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为[/JAVA_FINAL_WORK]的上下文中，servlet[login.LoginServlet]的Servlet.service()引发异常
 	java.lang.ClassCastException: class cn.hutool.captcha.CircleCaptcha cannot be cast to class java.lang.String (cn.hutool.captcha.CircleCaptcha is in unnamed module of loader org.apache.catalina.loader.ParallelWebappClassLoader @6950ed69; java.lang.String is in module java.base of loader 'bootstrap')
-		at LoginServlet.doPost(LoginServlet.java:47)
+		at login.LoginServlet.doPost(login.LoginServlet.java:47)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
@@ -25,9 +25,9 @@
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-01-Nov-2023 15:43:48.679 严重 [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为[/JAVA_FINAL_WORK]的上下文中，servlet[LoginServlet]的Servlet.service()引发异常
+01-Nov-2023 15:43:48.679 严重 [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为[/JAVA_FINAL_WORK]的上下文中，servlet[login.LoginServlet]的Servlet.service()引发异常
 	java.lang.ClassCastException: class cn.hutool.captcha.CircleCaptcha cannot be cast to class java.lang.String (cn.hutool.captcha.CircleCaptcha is in unnamed module of loader org.apache.catalina.loader.ParallelWebappClassLoader @6950ed69; java.lang.String is in module java.base of loader 'bootstrap')
-		at LoginServlet.doPost(LoginServlet.java:47)
+		at login.LoginServlet.doPost(login.LoginServlet.java:47)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)

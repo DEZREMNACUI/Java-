@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了添加，删除，修改功能">
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了搜索，分页功能">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dataitem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost.2023-11-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost.2023-11-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Addservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Addservlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/DatabaseReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Dataitem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/YanZhenMa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/YanZhenMa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZhucheServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/ZhucheServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiugaiservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/xiugaiservlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/xiugai.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/xiugai.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,7 +82,7 @@
     &quot;project.structure.last.edited&quot;: &quot;库&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -82,6 +95,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\lib" />
       <recent name="E:\IntelliJ IDEA 2023.2.2\projects\JAVA_FINAL_WORK\src\main\webapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,7 +210,13 @@
       <workItem from="1700056006625" duration="221000" />
       <workItem from="1700439454841" duration="4771000" />
       <workItem from="1700445758503" duration="2920000" />
-      <workItem from="1700451823691" duration="6069000" />
+      <workItem from="1700451823691" duration="7493000" />
+      <workItem from="1700463645079" duration="1964000" />
+      <workItem from="1700566074780" duration="7045000" />
+      <workItem from="1701045911829" duration="19000" />
+      <workItem from="1701056702366" duration="14631000" />
+      <workItem from="1701071771850" duration="4182000" />
+      <workItem from="1701079015529" duration="5083000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -244,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700020504884</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新了搜索，分页功能">
+      <option name="closed" value="true" />
+      <created>1700457935176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700457935176</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +309,7 @@
     <MESSAGE value="增加了注册，验证码，登录功能" />
     <MESSAGE value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
     <MESSAGE value="更新了添加，删除，修改功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了添加，删除，修改功能" />
+    <MESSAGE value="更新了搜索，分页功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了搜索，分页功能" />
   </component>
 </project>

@@ -1,16 +1,21 @@
+package book;
+
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 public class Dataitem {
     private final String book;
     private final String author;
     private final String nation;
+    private final String image;
 
-    public Dataitem(String book, String author, String nation) {
+    public Dataitem(String book, String author, String nation, String image) {
         this.book = book;
         this.author = author;
         this.nation = nation;
+        this.image = image;
     }
 
     public String getBook() {
@@ -25,9 +30,12 @@ public class Dataitem {
         return nation;
     }
 
+    public String getImage() {
+        return image;
+    }
     @Override
     public String toString() {
-        return "Dataitem{" +
+        return "book.Dataitem{" +
                 "book='" + book + '\'' +
                 ", author='" + author + '\'' +
                 ", nation='" + nation + '\'' +
@@ -44,14 +52,14 @@ public class Dataitem {
 
             // 建立数据库连接
             try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
-                // 构建查询语句
+                // 构建查询语句，包含图像数据的列
                 String sql = "";
                 switch (searchType) {
                     case "book":
-                        sql = "SELECT 书名, 作者, 国籍 FROM bookstore WHERE 书名 LIKE ? LIMIT ?, ?";
+                        sql = "SELECT 书名, 作者, 国籍, image FROM bookstore WHERE 书名 LIKE ? LIMIT ?, ?";
                         break;
                     case "author":
-                        sql = "SELECT 书名, 作者, 国籍 FROM bookstore WHERE 作者 LIKE ? LIMIT ?, ?";
+                        sql = "SELECT 书名, 作者, 国籍, image FROM bookstore WHERE 作者 LIKE ? LIMIT ?, ?";
                         break;
                     // 添加其他搜索类型的逻辑
                 }
@@ -70,8 +78,11 @@ public class Dataitem {
                             String author = resultSet.getString("作者");
                             String nation = resultSet.getString("国籍");
 
-                            // 创建数据项对象并添加到列表中
-                            Dataitem dataItem = new Dataitem(book, author, nation);
+                            // 获取图像文件路径
+                            String imagePath = resultSet.getString("image");
+
+                            // 创建数据项对象并添加到列表中，包含图像数据路径
+                            Dataitem dataItem = new Dataitem(book, author, nation, imagePath);
                             dataList.add(dataItem);
                         }
                     }
@@ -84,9 +95,10 @@ public class Dataitem {
     }
 
 
+
     public static void updateDataInDatabase(String jdbcUrl, String username, String password,
                                             String originalBook, String originalAuthor, String originalNation,
-                                            String newBook, String newAuthor, String newNation) {
+                                            String newBook, String newAuthor, String newNation, String image) {
         try {
             // 加载数据库驱动程序
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -94,15 +106,16 @@ public class Dataitem {
             // 建立数据库连接
             try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
                 // 执行更新
-                String sql = "UPDATE bookstore SET 书名=?, 作者=?, 国籍=? WHERE 书名=? AND 作者=? AND 国籍=?";
+                String sql = "UPDATE bookstore SET 书名=?, 作者=?, 国籍=?, image=? WHERE 书名=? AND 作者=? AND 国籍=?";
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                     // 设置参数
                     preparedStatement.setString(1, newBook);
                     preparedStatement.setString(2, newAuthor);
                     preparedStatement.setString(3, newNation);
-                    preparedStatement.setString(4, originalBook);
-                    preparedStatement.setString(5, originalAuthor);
-                    preparedStatement.setString(6, originalNation);
+                    preparedStatement.setString(4, image);
+                    preparedStatement.setString(5, originalBook);
+                    preparedStatement.setString(6, originalAuthor);
+                    preparedStatement.setString(7, originalNation);
 
                     // 执行更新操作
                     int rowsAffected = preparedStatement.executeUpdate();
@@ -148,8 +161,9 @@ public class Dataitem {
             e.printStackTrace();
         }
     }
+    // 在添加数据时，将图像数据转为 Base64 编码的字符串
     public static void addDataToDatabase(String jdbcUrl, String username, String password,
-                                         String book, String author, String nation) {
+                                         String book, String author, String nation, String imagePath) {
         try {
             // 加载数据库驱动程序
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -157,12 +171,13 @@ public class Dataitem {
             // 建立数据库连接
             try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
                 // 执行插入
-                String sql = "INSERT INTO bookstore (书名, 作者, 国籍) VALUES (?, ?, ?)";
+                String sql = "INSERT INTO bookstore (书名, 作者, 国籍, image) VALUES (?, ?, ?, ?)";
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                     // 设置参数
                     preparedStatement.setString(1, book);
                     preparedStatement.setString(2, author);
                     preparedStatement.setString(3, nation);
+                    preparedStatement.setString(4, imagePath);
 
                     // 执行插入操作
                     int rowsAffected = preparedStatement.executeUpdate();
@@ -178,8 +193,47 @@ public class Dataitem {
             e.printStackTrace();
         }
     }
-//    public static List<Dataitem> fetchDataWithSearch(String jdbcUrl, String username, String password, String searchType, String filter) {
-//        List<Dataitem> dataList = new ArrayList<>();
+
+    public static String returnimg(String jdbcUrl, String username, String password,
+                                         String book, String author, String nation) throws ClassNotFoundException {
+        try {
+            // 加载数据库驱动程序
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // 建立数据库连接
+            try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
+                // 执行更新
+                String sql = "SELECT image FROM bookstore WHERE 书名=? AND 作者=? AND 国籍=?";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                    // 设置参数
+                    preparedStatement.setString(1, book);
+                    preparedStatement.setString(2, author);
+                    preparedStatement.setString(3, nation);
+
+
+                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                        // 处理查询结果
+                        while (resultSet.next()) {
+
+                            // 获取图像文件路径
+                            String imagePath = resultSet.getString("image");
+                            return imagePath;
+
+                        }
+
+
+                    }
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } finally {
+
+        } return null;
+    }
+
+//    public static List<book.Dataitem> fetchDataWithSearch(String jdbcUrl, String username, String password, String searchType, String filter) {
+//        List<book.Dataitem> dataList = new ArrayList<>();
 //
 //        try {
 //            Class.forName("com.mysql.cj.jdbc.Driver");
@@ -206,7 +260,7 @@ public class Dataitem {
 //                            String author = resultSet.getString("作者");
 //                            String nation = resultSet.getString("国籍");
 //
-//                            Dataitem dataItem = new Dataitem(book, author, nation);
+//                            book.Dataitem dataItem = new book.Dataitem(book, author, nation);
 //                            dataList.add(dataItem);
 //                        }
 //                    }

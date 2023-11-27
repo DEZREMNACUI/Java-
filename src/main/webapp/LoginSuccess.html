@@ -19,6 +19,7 @@
         <th>书名</th>
         <th>作者</th>
         <th>国籍</th>
+        <th>图片</th>
         <th>操作</th>
     </tr>
 </table>
@@ -53,7 +54,7 @@
                 var booksData = response.data;
 
                 var table = document.getElementById('bookTable');
-                table.innerHTML = "<tr><th>书名</th><th>作者</th><th>国籍</th><th>操作</th></tr>";
+                table.innerHTML = "<tr><th>书名</th><th>作者</th><th>国籍</th><th>图片</th><th>操作</th></tr>";
 
                 for (var i = 0; i < booksData.length; i++) {
                     var row = table.insertRow(-1);
@@ -67,7 +68,15 @@
                     var nationCell = row.insertCell(2);
                     nationCell.innerHTML = booksData[i].nation;
 
-                    var operationCell = row.insertCell(3);
+
+                    var imageCell = row.insertCell(3);
+                    var image = document.createElement("img");
+                    image.src = booksData[i].image; // 直接使用图像 URL
+                    image.alt = "书籍图片";
+                    imageCell.appendChild(image);
+
+
+                    var operationCell = row.insertCell(4);
                     var modifyButton = document.createElement("button");
                     modifyButton.innerHTML = "修改";
                     modifyButton.onclick = function (book, author, nation) {
@@ -93,7 +102,8 @@
                             })
                                 .then(function (response) {
                                     console.log("删除成功", response);
-                                    window.location.reload();
+                                    // window.location.reload();
+                                    searchTable();
                                 })
                                 .catch(function (error) {
                                     console.error("删除失败", error);

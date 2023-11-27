@@ -5,6 +5,6 @@
     <PostResources base="E:/IntelliJ IDEA 2023.2.2/plugins/maven/lib/maven3/mvn_respository/org/apache/tomcat/tomcat-servlet-api/10.1.11/tomcat-servlet-api-10.1.11.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-servlet-api-10.1.11.jar"/>
     <PostResources base="E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib/fastjson2-2.0.17.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/fastjson2-2.0.17.jar"/>
     <PostResources base="E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib/mysql-connector-j-8.2.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-j-8.2.0.jar"/>
-    <PostResources base="C:/Users/dezremnacui/.m2/repository/cn/hutool/hutool-all/5.8.20/hutool-all-5.8.20.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/hutool-all-5.8.20.jar"/>
+    <PostResources base="E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/lib/hutool-all-5.8.20.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/hutool-all-5.8.20.jar"/>
   </Resources>
 </Context>

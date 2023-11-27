@@ -9,7 +9,7 @@
 <body>
 <h2>修改书籍信息</h2>
 
-<form id="modifyForm" onsubmit="submitForm(); return false;">
+<form id="modifyForm" onsubmit="submitForm(); return false;" enctype="multipart/form-data">
     <label for="newBook">新书名:</label>
     <input type="text" id="newBook" name="newBook" required><br>
 
@@ -18,6 +18,10 @@
 
     <label for="newNation">新国籍:</label>
     <input type="text" id="newNation" name="newNation" required><br>
+
+    <!-- 添加用于上传图片的输入字段 -->
+    <label for="newImage">新图片:</label>
+    <input type="file" id="newImage" name="newImage"><br>
 
     <button type="submit">提交修改</button>
     <input type="hidden" id="originalBook" name="originalBook" value="">
@@ -49,19 +53,28 @@
         var newBook = document.getElementById("newBook").value;
         var newAuthor = document.getElementById("newAuthor").value;
         var newNation = document.getElementById("newNation").value;
-        console.log("提交修改请求: ", newBook, newAuthor, newNation);
-        // 设置原始书籍信息到隐藏字段
-        document.getElementById("originalBook").value = originalBook;
-        document.getElementById("originalAuthor").value = originalAuthor;
-        document.getElementById("originalNation").value = originalNation;
-        // 使用 axios 发送 POST 请求
-        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/xiugai', {
-            originalBook: originalBook,
-            originalAuthor: originalAuthor,
-            originalNation: originalNation,
-            newBook: newBook,
-            newAuthor: newAuthor,
-            newNation: newNation
+
+        // 获取新图片文件
+        var newImageInput = document.getElementById("newImage");
+        var newImage = newImageInput.files[0];
+
+        // 使用 FormData 对象包装表单数据，包括新图片
+        var formData = new FormData();
+        formData.append("originalBook", originalBook);
+        formData.append("originalAuthor", originalAuthor);
+        formData.append("originalNation", originalNation);
+        formData.append("newBook", newBook);
+        formData.append("newAuthor", newAuthor);
+        formData.append("newNation", newNation);
+        formData.append("newImage", newImage);
+
+        console.log("提交修改请求: ", newBook, newAuthor, newNation, newImage);
+
+        // 使用 axios 发送包含文件的 POST 请求
+        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/xiugai', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
         }).then(function (response) {
             console.log('修改请求成功:', response);
             // 在请求成功后进行页面跳转或其他操作

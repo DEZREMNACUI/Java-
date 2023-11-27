@@ -8,7 +8,7 @@
 <body>
 <h2>添加书籍信息</h2>
 
-<form id="addForm" onsubmit="submitForm(); return false;">
+<form id="addForm" onsubmit="submitForm(); return false;" enctype="multipart/form-data">
     <label for="book">书名:</label>
     <input type="text" id="book" name="book" required><br>
 
@@ -17,6 +17,9 @@
 
     <label for="nation">国籍:</label>
     <input type="text" id="nation" name="nation" required><br>
+
+    <label for="image">选择图片:</label>
+    <input type="file" id="image" name="image" accept="image/*" required><br>
 
     <button type="submit">添加</button>
 </form>
@@ -27,13 +30,20 @@
         var book = document.getElementById("book").value;
         var author = document.getElementById("author").value;
         var nation = document.getElementById("nation").value;
-        console.log("提交添加请求: ", book, author, nation);
+        var imageFile = document.getElementById("image").files[0];
 
-        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/Add', {
-            data: {
-                book: book,
-                author: author,
-                nation: nation
+        var formData = new FormData();
+        formData.append('book', book);
+        formData.append('author', author);
+        formData.append('nation', nation);
+        formData.append('image', imageFile, imageFile.name);
+
+
+        console.log("提交添加请求: ", formData);
+
+        axios.post('http://10.69.219.123:8080/JAVA_FINAL_WORK/Add', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
             }
         }).then(function (response) {
             console.log('添加请求成功:', response);

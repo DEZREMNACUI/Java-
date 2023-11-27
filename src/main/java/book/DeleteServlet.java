@@ -1,3 +1,5 @@
+package book;
+
 import com.alibaba.fastjson2.JSONObject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -6,8 +8,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 @WebServlet(urlPatterns = "/Delete")
 public class DeleteServlet extends HttpServlet {
@@ -18,7 +23,7 @@ public class DeleteServlet extends HttpServlet {
 
     private void deleteDataFromDatabase(String jdbcUrl, String username, String password,
                                         String book, String author, String nation) {
-        // 调用 Dataitem 类中的删除方法
+        // 调用 book.Dataitem 类中的删除方法
         Dataitem.deleteDataFromDatabase(jdbcUrl, username, password, book, author, nation);
     }
 
@@ -52,7 +57,37 @@ public class DeleteServlet extends HttpServlet {
         // 输出解析后的书籍信息，方便调试
         System.out.println("Parsed book: " + book + ", author: " + author + ", nation: " + nation);
 
+
+        String s1;
+        try {
+            s1 = Dataitem.returnimg(jdbcUrl, username, password, book, author, nation);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        String fileUrl = "E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/src/main/webapp/uploads/" + s1; // 替换为实际文件的URL
+
+
+
+        String filePath = fileUrl; // 替换为实际文件的本地路径
+
+        File fileToDelete = new File(filePath);
+
+        if (fileToDelete.exists()) {
+            if (fileToDelete.delete()) {
+                System.out.println("File deleted successfully.");
+            } else {
+                System.out.println("Failed to delete file.");
+            }
+        } else {
+            System.out.println("File not found.");
+        }
+
+
+
         // 执行删除操作
         deleteDataFromDatabase(jdbcUrl, username, password, book, author, nation);
+
+
+
     }
 }
