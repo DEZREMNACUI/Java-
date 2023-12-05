@@ -161,7 +161,7 @@ public class Dataitem {
             e.printStackTrace();
         }
     }
-    // 在添加数据时，将图像数据转为 Base64 编码的字符串
+
     public static void addDataToDatabase(String jdbcUrl, String username, String password,
                                          String book, String author, String nation, String imagePath) {
         try {

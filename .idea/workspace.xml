@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了搜索，分页功能">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="更新了上传图片文件的功能，添加按钮与修改按钮都能对图片进行操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/conf/Catalina/localhost/JAVA_FINAL_WORK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTomCat/logs/localhost.2023-11-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTomCat/logs/localhost.2023-11-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fastjson2-2.0.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.2.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Addservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Addservlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/DatabaseReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Dataitem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/YanZhenMa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/YanZhenMa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZhucheServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/ZhucheServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiugaiservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/xiugaiservlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/DatabaseReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/DatabaseReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/Dataitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Dataitem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/xiugai.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/xiugai.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,7 @@
     &quot;project.structure.last.edited&quot;: &quot;库&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -216,7 +206,16 @@
       <workItem from="1701045911829" duration="19000" />
       <workItem from="1701056702366" duration="14631000" />
       <workItem from="1701071771850" duration="4182000" />
-      <workItem from="1701079015529" duration="5083000" />
+      <workItem from="1701079015529" duration="5401000" />
+      <workItem from="1701170690111" duration="8536000" />
+      <workItem from="1701502088176" duration="965000" />
+      <workItem from="1701504697187" duration="22000" />
+      <workItem from="1701594438865" duration="8000" />
+      <workItem from="1701648431921" duration="1030000" />
+      <workItem from="1701649484361" duration="7014000" />
+      <workItem from="1701762001537" duration="109000" />
+      <workItem from="1701762119551" duration="319000" />
+      <workItem from="1701762451399" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -274,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700457935176</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新了上传图片文件的功能，添加按钮与修改按钮都能对图片进行操作">
+      <option name="closed" value="true" />
+      <created>1701096153252</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701096153252</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +317,11 @@
     <MESSAGE value="建立并连接了书城的数据库，将书城的数据输出在登录成功的页面上" />
     <MESSAGE value="更新了添加，删除，修改功能" />
     <MESSAGE value="更新了搜索，分页功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了搜索，分页功能" />
+    <MESSAGE value="更新了上传图片文件的功能，添加按钮与修改按钮都能对图片进行操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了上传图片文件的功能，添加按钮与修改按钮都能对图片进行操作" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
