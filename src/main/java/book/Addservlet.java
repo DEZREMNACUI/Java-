@@ -29,6 +29,9 @@ public class Addservlet extends HttpServlet {
         String book = req.getParameter("book");
         String author = req.getParameter("author");
         String nation = req.getParameter("nation");
+        String content = req.getParameter("content"); // 获取内容
+        String price = req.getParameter("price");     // 获取价格
+
 
         // 处理图像文件
         Part imagePart = req.getPart("image");
@@ -41,8 +44,9 @@ public class Addservlet extends HttpServlet {
         // 设置响应的 Content-Type
         resp.setContentType("application/json;charset=UTF-8");
 
-        // 调用 Dataitem 类中的添加方法，包括图像数据
-        Dataitem.addDataToDatabase(jdbcUrl, username, password, book, author, nation, imagePath);
+        // 调用 Dataitem 类中的添加方法，包括内容、价格和图像数据
+        Dataitem.addDataToDatabase(jdbcUrl, username, password, book, content, price, author, nation, imagePath);
+
 
         // 返回成功响应
         resp.getWriter().write("{\"success\": true}");

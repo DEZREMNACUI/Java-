@@ -17,6 +17,8 @@
 <table border="1" id="bookTable">
     <tr>
         <th>书名</th>
+        <th>内容</th>
+        <th>价格</th>
         <th>作者</th>
         <th>国籍</th>
         <th>图片</th>
@@ -54,38 +56,47 @@
                 var booksData = response.data;
 
                 var table = document.getElementById('bookTable');
-                table.innerHTML = "<tr><th>书名</th><th>作者</th><th>国籍</th><th>图片</th><th>操作</th></tr>";
+                table.innerHTML = "<tr><th>书名</th><th>内容</th><th>价格</th><th>作者</th><th>国籍</th><th>图片</th><th>操作</th></tr>";
 
                 for (var i = 0; i < booksData.length; i++) {
                     var row = table.insertRow(-1);
                     var bookCell = row.insertCell(0);
                     bookCell.innerHTML = booksData[i].book;
 
-                    var authorCell = row.insertCell(1);
+                    var contentCell = row.insertCell(1); // 新增内容单元格
+                    contentCell.innerHTML = booksData[i].content; // 假设数据中有 content 字段
+
+                    var priceCell = row.insertCell(2); // 新增价格单元格
+                    priceCell.innerHTML = booksData[i].price; // 假设数据中有 price 字段
+
+                    var authorCell = row.insertCell(3);
                     authorCell.innerHTML = booksData[i].author;
 
-                    var nationCell = row.insertCell(2);
+                    var nationCell = row.insertCell(4);
                     nationCell.innerHTML = booksData[i].nation;
 
 
-                    var imageCell = row.insertCell(3);
+                    var imageCell = row.insertCell(5);
                     var image = document.createElement("img");
                     image.src = booksData[i].image; // 直接使用图像 URL
                     image.alt = "书籍图片";
                     imageCell.appendChild(image);
 
 
-                    var operationCell = row.insertCell(4);
+                    var operationCell = row.insertCell(6);
                     var modifyButton = document.createElement("button");
                     modifyButton.innerHTML = "修改";
-                    modifyButton.onclick = function (book, author, nation) {
+                    modifyButton.onclick = function (book, content, price, author, nation) {
                         return function () {
-                            console.log("点击了修改按钮，书名：" + book + "，作者：" + author + "，国籍：" + nation);
+                            console.log("点击了修改按钮，书名：" + book + "，内容：" + content + "，价格：" + price + "，作者：" + author + "，国籍：" + nation);
                             window.location.href = 'xiugai.html?book=' + encodeURIComponent(book) +
+                                '&content=' + encodeURIComponent(content) +
+                                '&price=' + encodeURIComponent(price) +
                                 '&author=' + encodeURIComponent(author) +
                                 '&nation=' + encodeURIComponent(nation);
                         };
-                    }(booksData[i].book, booksData[i].author, booksData[i].nation);
+                    }(booksData[i].book, booksData[i].content, booksData[i].price, booksData[i].author, booksData[i].nation);
+
                     operationCell.appendChild(modifyButton);
 
                     var deleteButton = document.createElement("button");

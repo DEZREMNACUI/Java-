@@ -38,6 +38,40 @@ public class xiugaiservlet extends HttpServlet {
         String obook = req.getParameter("originalBook");
         String oauthor = req.getParameter("originalAuthor");
         String onation = req.getParameter("originalNation");
+        String newContent = req.getParameter("newContent");
+        String newPrice = req.getParameter("newPrice");
+
+
+
+
+        String s1;
+        try {
+            s1 = Dataitem.returnimg(jdbcUrl, username, password, obook, oauthor, onation);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        String fileUrl = "E:/IntelliJ IDEA 2023.2.2/projects/JAVA_FINAL_WORK/src/main/webapp/uploads/" + s1; // 替换为实际文件的URL
+
+
+
+        String filePath = fileUrl; // 替换为实际文件的本地路径
+
+        File fileToDelete = new File(filePath);
+
+        if (fileToDelete.exists()) {
+            if (fileToDelete.delete()) {
+                System.out.println("File deleted successfully.");
+            } else {
+                System.out.println("Failed to delete file.");
+            }
+        } else {
+            System.out.println("File not found.");
+        }
+
+
+
+
+
 
         // 处理图像文件
         Part imagePart = req.getPart("newImage");
@@ -51,7 +85,7 @@ public class xiugaiservlet extends HttpServlet {
         resp.setContentType("application/json;charset=UTF-8");
 
         // 调用 Dataitem 类中的添加方法，包括图像数据
-        Dataitem.updateDataInDatabase(jdbcUrl, username, password,obook, oauthor, onation, book, author,nation,imagePath);
+        Dataitem.updateDataInDatabase(jdbcUrl, username, password, obook, oauthor, onation, book, newContent, newPrice, author, nation, imagePath);
 
         // 返回成功响应
         resp.getWriter().write("{\"success\": true}");

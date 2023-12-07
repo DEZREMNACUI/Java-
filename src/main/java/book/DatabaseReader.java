@@ -29,7 +29,7 @@ public class DatabaseReader extends HttpServlet {
         String filter = req.getParameter("filter");
         int page = Integer.parseInt(req.getParameter("page")); // 获取传递的页码参数
 
-        int pageSize = 6; // 每页显示的数据量
+        int pageSize = 9; // 每页显示的数据量
         int offset = (page - 1) * pageSize; // 计算偏移量
 
         List<Dataitem> dataList = Dataitem.fetchDataFromDatabase(jdbcUrl, username, password, searchType, filter, offset, pageSize);
@@ -63,6 +63,8 @@ public class DatabaseReader extends HttpServlet {
         json.put("book", dataItem.getBook());
         json.put("author", dataItem.getAuthor());
         json.put("nation", dataItem.getNation());
+        json.put("price", dataItem.getPrice());
+        json.put("content", dataItem.getContent());
 
         // 检查图像是否为 null
         if (dataItem.getImage() != null) {

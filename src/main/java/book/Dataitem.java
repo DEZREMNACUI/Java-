@@ -10,12 +10,16 @@ public class Dataitem {
     private final String author;
     private final String nation;
     private final String image;
+    private final String content; // 新增内容属性
+    private final String price;   // 新增价格属性
 
-    public Dataitem(String book, String author, String nation, String image) {
+    public Dataitem(String book, String author, String nation, String image, String content, String price) {
         this.book = book;
         this.author = author;
         this.nation = nation;
         this.image = image;
+        this.content = content; // 初始化内容
+        this.price = price;     // 初始化价格
     }
 
     public String getBook() {
@@ -26,6 +30,14 @@ public class Dataitem {
         return author;
     }
 
+    public String getContent() {
+        return content;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
     public String getNation() {
         return nation;
     }
@@ -33,6 +45,7 @@ public class Dataitem {
     public String getImage() {
         return image;
     }
+
     @Override
     public String toString() {
         return "book.Dataitem{" +
@@ -56,12 +69,12 @@ public class Dataitem {
                 String sql = "";
                 switch (searchType) {
                     case "book":
-                        sql = "SELECT 书名, 作者, 国籍, image FROM bookstore WHERE 书名 LIKE ? LIMIT ?, ?";
+                        sql = "SELECT 书名, 内容, 价格, 作者, 国籍, image FROM bookstore WHERE 书名 LIKE ? LIMIT ?, ?";
                         break;
                     case "author":
-                        sql = "SELECT 书名, 作者, 国籍, image FROM bookstore WHERE 作者 LIKE ? LIMIT ?, ?";
+                        sql = "SELECT 书名, 内容, 价格, 作者, 国籍, image FROM bookstore WHERE 作者 LIKE ? LIMIT ?, ?";
                         break;
-                    // 添加其他搜索类型的逻辑
+
                 }
 
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -75,14 +88,13 @@ public class Dataitem {
                         // 处理查询结果
                         while (resultSet.next()) {
                             String book = resultSet.getString("书名");
+                            String content = resultSet.getString("内容"); // 获取内容
+                            String price = resultSet.getString("价格");   // 获取价格
                             String author = resultSet.getString("作者");
                             String nation = resultSet.getString("国籍");
-
-                            // 获取图像文件路径
                             String imagePath = resultSet.getString("image");
 
-                            // 创建数据项对象并添加到列表中，包含图像数据路径
-                            Dataitem dataItem = new Dataitem(book, author, nation, imagePath);
+                            Dataitem dataItem = new Dataitem(book, author, nation, imagePath, content, price);
                             dataList.add(dataItem);
                         }
                     }
@@ -95,10 +107,9 @@ public class Dataitem {
     }
 
 
-
     public static void updateDataInDatabase(String jdbcUrl, String username, String password,
                                             String originalBook, String originalAuthor, String originalNation,
-                                            String newBook, String newAuthor, String newNation, String image) {
+                                            String newBook, String newContent, String newPrice, String newAuthor, String newNation, String image) {
         try {
             // 加载数据库驱动程序
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -106,16 +117,18 @@ public class Dataitem {
             // 建立数据库连接
             try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
                 // 执行更新
-                String sql = "UPDATE bookstore SET 书名=?, 作者=?, 国籍=?, image=? WHERE 书名=? AND 作者=? AND 国籍=?";
+                String sql = "UPDATE bookstore SET 书名=?, 内容=?, 价格=?, 作者=?, 国籍=?, image=? WHERE 书名=? AND 作者=? AND 国籍=?";
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                     // 设置参数
                     preparedStatement.setString(1, newBook);
-                    preparedStatement.setString(2, newAuthor);
-                    preparedStatement.setString(3, newNation);
-                    preparedStatement.setString(4, image);
-                    preparedStatement.setString(5, originalBook);
-                    preparedStatement.setString(6, originalAuthor);
-                    preparedStatement.setString(7, originalNation);
+                    preparedStatement.setString(2, newContent); // 设置新内容
+                    preparedStatement.setString(3, newPrice);   // 设置新价格
+                    preparedStatement.setString(4, newAuthor);
+                    preparedStatement.setString(5, newNation);
+                    preparedStatement.setString(6, image);
+                    preparedStatement.setString(7, originalBook);
+                    preparedStatement.setString(8, originalAuthor);
+                    preparedStatement.setString(9, originalNation);
 
                     // 执行更新操作
                     int rowsAffected = preparedStatement.executeUpdate();
@@ -131,6 +144,7 @@ public class Dataitem {
             e.printStackTrace();
         }
     }
+
     public static void deleteDataFromDatabase(String jdbcUrl, String username, String password,
                                               String book, String author, String nation) {
         try {
@@ -163,7 +177,7 @@ public class Dataitem {
     }
 
     public static void addDataToDatabase(String jdbcUrl, String username, String password,
-                                         String book, String author, String nation, String imagePath) {
+                                         String book, String content, String price, String author, String nation, String imagePath) {
         try {
             // 加载数据库驱动程序
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -171,13 +185,15 @@ public class Dataitem {
             // 建立数据库连接
             try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
                 // 执行插入
-                String sql = "INSERT INTO bookstore (书名, 作者, 国籍, image) VALUES (?, ?, ?, ?)";
+                String sql = "INSERT INTO bookstore (书名, 内容, 价格, 作者, 国籍, image) VALUES (?, ?, ?, ?, ?, ?)";
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                     // 设置参数
                     preparedStatement.setString(1, book);
-                    preparedStatement.setString(2, author);
-                    preparedStatement.setString(3, nation);
-                    preparedStatement.setString(4, imagePath);
+                    preparedStatement.setString(2, content); // 设置内容
+                    preparedStatement.setString(3, price);   // 设置价格
+                    preparedStatement.setString(4, author);
+                    preparedStatement.setString(5, nation);
+                    preparedStatement.setString(6, imagePath);
 
                     // 执行插入操作
                     int rowsAffected = preparedStatement.executeUpdate();
@@ -194,8 +210,9 @@ public class Dataitem {
         }
     }
 
+
     public static String returnimg(String jdbcUrl, String username, String password,
-                                         String book, String author, String nation) throws ClassNotFoundException {
+                                   String book, String author, String nation) throws ClassNotFoundException {
         try {
             // 加载数据库驱动程序
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -229,7 +246,8 @@ public class Dataitem {
             }
         } finally {
 
-        } return null;
+        }
+        return null;
     }
 
 //    public static List<book.Dataitem> fetchDataWithSearch(String jdbcUrl, String username, String password, String searchType, String filter) {

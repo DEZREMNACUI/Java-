@@ -10,6 +10,13 @@ body {
     padding: 20px;
 }
 
+/* 限制内容单元格的最大高度并添加滚动条 */
+#bookTable td:nth-child(2) { /* 假设内容在第二列 */
+    max-width: 100px;
+    overflow-x: auto;
+}
+
+
 h2 {
     color: #333;
 }

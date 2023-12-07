@@ -13,6 +13,15 @@
     <label for="newBook">新书名:</label>
     <input type="text" id="newBook" name="newBook" required><br>
 
+    <label for="newContent">新内容:</label>
+    <textarea id="newContent" name="newContent" required></textarea><br>
+
+    <label for="newPrice">新价格:</label>
+    <input type="text" id="newPrice" name="newPrice" required><br>
+
+
+
+
     <label for="newAuthor">新作者:</label>
     <input type="text" id="newAuthor" name="newAuthor" required><br>
 
@@ -41,11 +50,15 @@
         originalBook = urlParams.get('book') || '';
         originalAuthor = urlParams.get('author') || '';
         originalNation = urlParams.get('nation') || '';
+        var newContent = urlParams.get('content') || '';
+        var newPrice = urlParams.get('price') || '';
 
-        // 填充搜索框中的默认值
+        // 填充表单中的默认值
         document.getElementById("newBook").value = originalBook;
         document.getElementById("newAuthor").value = originalAuthor;
         document.getElementById("newNation").value = originalNation;
+        document.getElementById("newContent").value = newContent;
+        document.getElementById("newPrice").value = newPrice;
     };
 
     function submitForm() {
@@ -53,10 +66,16 @@
         var newBook = document.getElementById("newBook").value;
         var newAuthor = document.getElementById("newAuthor").value;
         var newNation = document.getElementById("newNation").value;
-
+        var newPrice = document.getElementById("newPrice").value;
+        var newContent = document.getElementById("newContent").value;
         // 获取新图片文件
         var newImageInput = document.getElementById("newImage");
         var newImage = newImageInput.files[0];
+        // 检查是否已经选择了文件
+        if (!newImageInput.files.length) {
+            alert("请上传一张图片");
+            return; // 阻止表单提交
+        }
 
         // 使用 FormData 对象包装表单数据，包括新图片
         var formData = new FormData();
@@ -64,6 +83,8 @@
         formData.append("originalAuthor", originalAuthor);
         formData.append("originalNation", originalNation);
         formData.append("newBook", newBook);
+        formData.append("newContent", newContent);
+        formData.append("newPrice", newPrice);
         formData.append("newAuthor", newAuthor);
         formData.append("newNation", newNation);
         formData.append("newImage", newImage);

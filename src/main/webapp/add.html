@@ -12,6 +12,13 @@
     <label for="book">书名:</label>
     <input type="text" id="book" name="book" required><br>
 
+    <label for="content">内容:</label>
+    <textarea id="content" name="content" required></textarea><br>
+
+    <label for="price">价格:</label>
+    <input type="text" id="price" name="price" required><br>
+
+
     <label for="author">作者:</label>
     <input type="text" id="author" name="author" required><br>
 
@@ -30,12 +37,16 @@
         var book = document.getElementById("book").value;
         var author = document.getElementById("author").value;
         var nation = document.getElementById("nation").value;
+        var content = document.getElementById("content").value; // 获取内容值
+        var price = document.getElementById("price").value;     // 获取价格值
         var imageFile = document.getElementById("image").files[0];
 
         var formData = new FormData();
         formData.append('book', book);
         formData.append('author', author);
         formData.append('nation', nation);
+        formData.append('content', content); // 添加内容到表单数据
+        formData.append('price', price);     // 添加价格到表单数据
         formData.append('image', imageFile, imageFile.name);
 
 
