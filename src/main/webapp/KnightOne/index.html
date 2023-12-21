@@ -46,31 +46,46 @@
     <div class="container-fluid">
 
         <div class="row justify-content-center">
-            <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
-                <h1 class="logo me-auto me-lg-0"><a href="index.html">舟亢的书城</a></h1>
+            <div class="col-xl-9 d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <h1 class="logo">
+                    <a href="index.html">舟亢的书城</a>
+                </h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                <nav id="navbar" class="navbar order-last order-lg-0">
+                <!-- Navigation Bar -->
+                <nav id="navbar" class="navbar">
                     <ul>
                         <li><a class="nav-link scrollto active" href="#hero">首页</a></li>
-
-
                         <li><a class="nav-link scrollto" href="#portfolio">读者精选</a></li>
                         <li><a class="nav-link scrollto" href="#pricing">列表</a></li>
-
-
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav><!-- .navbar -->
+                </nav>
+
+                <!-- Search Bar -->
 
 
-                <div class="search-bar">
-                    <input type="text" placeholder="搜索..." id="search" oninput="searchTable()">
+                <!-- User Authentication Section -->
+                <div class="user-authentication">
+                    <a href="../index.html" style="color: white; text-decoration: none;">
+                        <img src="../uploads/regist.png" alt="登录" style="height: 61px;">
+                        <span>登录</span>
+                    </a>
+                    <a href="01.html"
+                       style="color: white; text-decoration: none;">
+                        <img src="../uploads/3.png" alt="购物车" style="height: 61px;">
+                        <span>购物车</span>
+                    </a>
+                    <span id="visitCountDisplay" style="color: white; margin-left: 20px;"></span>
                 </div>
-
+                <div class="search-bar">
+                    <input type="text" placeholder="搜索..." id="search" onkeypress="searchTable()">
+                </div>
             </div>
         </div>
+
 
     </div>
 </header><!-- End Header -->
@@ -429,6 +444,25 @@
     // };
     window.addEventListener('load', searchTable);
 
+
+
+    // 从sessionStorage获取访问次数
+    var visitCount = sessionStorage.getItem('visitCount');
+
+    // 检查visitCount是否已存在
+    if (visitCount) {
+        // 如果存在，增加计数
+        visitCount = Number(visitCount) + 1;
+    } else {
+        // 如果不存在，初始化为1
+        visitCount = 1;
+    }
+
+    // 更新sessionStorage中的访问次数
+    sessionStorage.setItem('visitCount', visitCount);
+
+    // 更新导航栏中的访问次数显示
+    document.getElementById('visitCountDisplay').textContent = '访问次数: ' + visitCount;
 </script>
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

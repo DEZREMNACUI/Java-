@@ -105,6 +105,7 @@
                     <div class="portfolio-description">
 
                     </div>
+                    <button type="button" id="addToCartButton" class="btn btn-primary">加入购物车</button>
                 </div>
 
             </div>
@@ -180,6 +181,29 @@
                         </p>`;
 
     document.getElementsByClassName("portfolio-description")[0].innerHTML = htmlcontent1;
+
+
+
+    // 假设这是加入购物车按钮的点击事件处理函数
+    document.getElementById('addToCartButton').addEventListener('click', function() {
+        // 获取当前书籍的信息
+        var bookName = document.querySelector('.portfolio-info h3').textContent;
+        var author = document.querySelector('.portfolio-info li:nth-child(2)').textContent.split(': ')[1];
+        var bookPrice = document.querySelector('.portfolio-info li:nth-child(1)').textContent.split(': ')[1];
+        var imageUrl = document.getElementsByName("sb1")[0].src;
+
+        // 获取已存储的书籍数组，或初始化一个新数组
+        var books = JSON.parse(sessionStorage.getItem('books')) || [];
+
+        // 将当前书籍添加到数组
+        books.push({ bookName, author, bookPrice, imageUrl });
+
+        // 重新存储更新后的数组
+        sessionStorage.setItem('books', JSON.stringify(books));
+
+        alert('已加入购物车!');
+    });
+
 </script>
 
 </body>
