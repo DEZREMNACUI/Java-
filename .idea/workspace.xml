@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="重新制作美化了前端">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/KnightOne/01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/KnightOne/inner-page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/regist.png" afterDir="false" />
+    <list default="true" id="79b95d25-93f2-4698-a6ed-d564c1a4ad1e" name="更改" comment="最终版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/KnightOne/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/KnightOne/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/KnightOne/inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/KnightOne/inner-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/KnightOne/portfolio-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/KnightOne/portfolio-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginSuccess.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +233,10 @@
       <workItem from="1702357949379" duration="1438000" />
       <workItem from="1703127323056" duration="5994000" />
       <workItem from="1703135490746" duration="147000" />
-      <workItem from="1703150143739" duration="586000" />
+      <workItem from="1703150143739" duration="752000" />
+      <workItem from="1703264462840" duration="2215000" />
+      <workItem from="1703290071740" duration="1955000" />
+      <workItem from="1703314379945" duration="5952000" />
     </task>
     <task id="LOCAL-00001" summary="登录网页与跳转后的网页的制作">
       <option name="closed" value="true" />
@@ -323,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701929612945</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最终版本">
+      <option name="closed" value="true" />
+      <created>1703150872468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703150872468</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +343,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -362,7 +365,8 @@
     <MESSAGE value="更新了上传图片文件的功能，添加按钮与修改按钮都能对图片进行操作" />
     <MESSAGE value="ajax异步已更新，同时更新了库" />
     <MESSAGE value="重新制作美化了前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新制作美化了前端" />
+    <MESSAGE value="最终版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终版本" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
